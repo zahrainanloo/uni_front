@@ -1,0 +1,33 @@
+.the_title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #212529;
+}
+
+.question_title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #575757;
+}
+
+.form-check-input {
+    float: right !important;
+}
+
+.form-check-label {
+    margin-right: 20px;
+}
+
+.form-check {
+    padding: 10px 0px 10px 10px;
+    cursor: pointer;
+    border-radius: 23px;
+}
+
+.form-check:hover {
+    background-color: rgb(208, 220, 255) !important;
+}
+
+.div-ok {
+    background-color: rgb(116, 116, 116);
+}
