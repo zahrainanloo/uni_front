@@ -60,4 +60,19 @@ export class QuestionsService {
       return response;
     }));
   }
+  notaccept(id: any): Observable<any>{
+    const options = {
+      headers: {
+        Authorization: 'Bearer ' + localStorage.getItem('token'),
+        Accept: 'application/json'
+      }
+    };
+    // @ts-ignore
+    return this.http.put('http://localhost:8000/v1/lessons/' + localStorage.getItem('lesId') +'/questions/' + id + '/notaccept', localStorage.getItem('') ,options).pipe(map((response: Response) => {
+      return response;
+    }));
+  }
+
+
+
 }

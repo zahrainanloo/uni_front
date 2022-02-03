@@ -1,0 +1,10 @@
+.azmon_show_teacher {
+    background: #407783;
+    border-radius: 15px;
+}
+
+.azmon_show_teacher:hover {
+    background: #1144d1;
+    border-radius: 15px;
+    transition: 0.5s;
+}

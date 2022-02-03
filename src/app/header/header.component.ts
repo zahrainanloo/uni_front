@@ -9,11 +9,15 @@ import {ExamRepository} from '../models/ExamRepository';
 })
 export class HeaderComponent implements OnInit {
   public examRepository: ExamRepository;
+  public yourName:any='-';
   constructor(private router: Router,
               public injector: Injector,) {
     this.examRepository = ExamRepository.getInstance(injector);
   }
   ngOnInit(): void {
+    if (localStorage.getItem('yourName')) {
+        this.yourName=localStorage.getItem('yourName');
+      }
   }
   navigateToLogin(): any{
     this.router.navigateByUrl('/login').then();

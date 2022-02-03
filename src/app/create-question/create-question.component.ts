@@ -252,6 +252,7 @@ export class CreateQuestionComponent implements OnInit {
   this.nvSecondCorrection=0;
   this.nvThirdCorrection=0;
   this.nvFourthCorrection=0;
+  this.disableButton = false;
  }
  checkSecond(value: any): any{
   this.nvSecondCorrection === 1;
@@ -259,6 +260,7 @@ export class CreateQuestionComponent implements OnInit {
   this.nvFirstCorrection=0;
   this.nvThirdCorrection=0;
   this.nvFourthCorrection=0;
+  this.disableButton = false;
  }
  checkThird(value: any): any{
   this.nvThirdCorrection === 1;
@@ -266,11 +268,13 @@ export class CreateQuestionComponent implements OnInit {
   this.nvFirstCorrection=0;
   this.nvSecondCorrection=0;
   this.nvFourthCorrection=0;
+  this.disableButton = false;
  }
  checkFourth(value: any): any{
   this.nvFourthCorrection === 1;
   this.nvFirstCorrection=0;
   this.nvSecondCorrection=0;
   this.nvThirdCorrection=0;
+  this.disableButton = false;
  }
 }

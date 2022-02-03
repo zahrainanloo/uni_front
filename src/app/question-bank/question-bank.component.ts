@@ -50,4 +50,13 @@ export class QuestionBankComponent implements OnInit {
       }
     );
   }
+  notacceptQuestion(question: any): any{
+    question.isAccepted = 2;
+    // isAccepted = 1;
+    this.questionService.notaccept(question.id).subscribe(
+      (data) => {
+      }
+    );
+  }
+
 }

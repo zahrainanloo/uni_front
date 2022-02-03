@@ -9,6 +9,7 @@ import {ExamsService} from "../services/exams.service";
 export class ScoreListComponent implements OnInit {
   public response: any;
   public questions: any;
+  public questionslen: any;
   constructor(private examService: ExamsService) { }
 
   ngOnInit(): void {
@@ -19,6 +20,7 @@ export class ScoreListComponent implements OnInit {
       (data) => {
         this.response = data.data;
         this.questions = data.data.questions;
+        this.questionslen=this.questions.length;
       }
     );
   }
